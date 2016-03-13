@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) TestClass *testClass;
 -(void)sayHello;
+-(void)sayByeBye;
 @end
 
 @implementation ViewController
@@ -32,10 +33,14 @@
     
     [self sayHello];
     
+    [self sayByeBye];
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)sayHello{
         NSLog(@"Hello");
+}
+-(void)sayByeBye{
+    NSLog(@"sayByeBye");
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
